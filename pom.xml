@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jp.glasmoon.tools</groupId>
+  <artifactId>message-listener</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  <name>${project.artifactId}</name>
+
+  <developers>
+    <developer>
+			<id>rin_ne</id>
+      <name>rinrinne</name>
+      <email>rinrin.ne@gmail.com</email>
+      <url>http://www.glass-moon.jp/</url>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>Asia/Tokyo</timezone>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+
+  <repositories>
+    <repository>
+      <id>jcenter</id>
+      <url>http://jcenter.bintray.com/</url>
+    </repository>
+  </repositories>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <connection>scm:git:https://github.com/rinrinne/message-listener.git</connection>
+    <developerConnection>scm:git:https://github.com/rinrinne/message-listener.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/rinrinne/message-listener</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>bintray-rinrinne-maven</id>
+      <name>rinrinne-maven</name>
+      <url>https://api.bintray.com/maven/rinrinne/maven/message-listener/;publish=1</url>
+    </repository>
+  </distributionManagement>
+
+</project>
